@@ -1,0 +1,8 @@
+{
+  "foo": "bar",
+  "dbUrl": "postgresql://dev:dev@localhost:5432/liveness?schema=dev",
+  "redisConnectionConfig": {
+    "host": "localhost",
+    "port": 6379
+  }
+}

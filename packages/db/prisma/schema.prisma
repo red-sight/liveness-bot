@@ -1,0 +1,70 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String     @id @default(uuid())
+  role      Role       @default(USER)
+  tg_id     String
+  Resources Resource[]
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+}
+
+model Resource {
+  id         String   @id @default(uuid())
+  chatId     String
+  name       String?
+  endpointId String
+  frequency  Int      @default(300000)
+  userId     String
+  active     Boolean  @default(true)
+  User       User     @relation(fields: [userId], references: [id])
+  Endpoint   Endpoint @relation(fields: [endpointId], references: [id])
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Endpoint {
+  id        String     @id @default(uuid())
+  url       String
+  type      HttpMethod @default(GET)
+  body      Json?      @db.JsonB
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  Resource  Resource[]
+  Liveness  Report[]
+}
+
+model Report {
+  id           String   @id @default(uuid())
+  endpointId   String
+  errorMessage String?
+  errorCode    String?
+  status       Int?
+  response     Json?    @db.JsonB
+  Endpoint     Endpoint @relation(fields: [endpointId], references: [id])
+  createdAt    DateTime @default(now())
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+enum HttpMethod {
+  CONNECT
+  DELETE
+  GET
+  HEAD
+  OPTIONS
+  PATCH
+  POST
+  PUT
+  TRACE
+}
