@@ -4,5 +4,6 @@
   "redisConnectionConfig": {
     "host": "localhost",
     "port": 6379
-  }
+  },
+  "tgBotToken": "@@TG_BOT_TOKEN"
 }

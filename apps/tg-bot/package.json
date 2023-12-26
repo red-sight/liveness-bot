@@ -1,0 +1,31 @@
+{
+  "name": "tg-bot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start:dev": "tsc --watch & nodemon dist/index.js",
+    "dev": "echo 'Add dev script here'",
+    "build": "tsc",
+    "test": "echo 'Add test script here'",
+    "lint": "echo 'Add lint script here'"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:^",
+    "@repo/typescript-config": "workspace:^",
+    "@types/eslint": "^8.44.9",
+    "@types/ioredis": "^5.0.0",
+    "@types/node": "^20.10.5",
+    "eslint": "^8.56.0",
+    "nodemon": "^3.0.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@grammyjs/conversations": "^1.1.2",
+    "@grammyjs/i18n": "^1.0.1",
+    "@grammyjs/storage-redis": "^2.4.1",
+    "@lib/config": "workspace:^",
+    "@lib/db": "workspace:^",
+    "grammy": "^1.19.3",
+    "ioredis": "^5.3.2"
+  }
+}

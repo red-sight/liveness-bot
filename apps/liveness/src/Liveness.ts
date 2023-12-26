@@ -65,7 +65,6 @@ export class Liveness {
           timeout
         });
         reportCreateData.status = res.status;
-        reportCreateData.response = res.data;
       } catch (error: any) {
         if (error.response) {
           reportCreateData.status = error.response.status;
@@ -73,7 +72,7 @@ export class Liveness {
         reportCreateData.errorMessage = error.message;
         reportCreateData.errorCode = error.code;
       }
-      const res = await liveness.ctx.prisma.report.create({
+      await liveness.ctx.prisma.report.create({
         data: reportCreateData
       });
       // console.log("Report added", res);

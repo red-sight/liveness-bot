@@ -438,6 +438,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@deno/shim-deno-test@npm:^0.3.2":
+  version: 0.3.3
+  resolution: "@deno/shim-deno-test@npm:0.3.3"
+  checksum: b121b37670e9254bd41b06530960ed224b8755131d1cd5333f2200b21a3ae0a4c9b9240ed0be758af93287fb0e267de5417b6c12416eee3578160527b60d175f
+  languageName: node
+  linkType: hard
+
+"@deno/shim-deno-test@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@deno/shim-deno-test@npm:0.4.0"
+  checksum: 38211dd19d7ab22f80103de6b740ecff7f95a54e846c1425060ccfa647e08cdb3b7dccf93700dd45e8e384e18ec04114144fba66db879228753d6526d2272feb
+  languageName: node
+  linkType: hard
+
+"@deno/shim-deno@npm:~0.16.1":
+  version: 0.16.1
+  resolution: "@deno/shim-deno@npm:0.16.1"
+  dependencies:
+    "@deno/shim-deno-test": "npm:^0.4.0"
+    which: "npm:^2.0.2"
+  checksum: 5af26bdbb865237997d3ed5d0cbd649b81672a70422eebaf06270f71da4ddfd268bc28559e685ed53692688b226e03539432fd2cb87dc815a77a406d70930cca
+  languageName: node
+  linkType: hard
+
+"@deno/shim-deno@npm:~0.9.0":
+  version: 0.9.0
+  resolution: "@deno/shim-deno@npm:0.9.0"
+  dependencies:
+    "@deno/shim-deno-test": "npm:^0.3.2"
+    which: "npm:^2.0.2"
+  checksum: 8fd8db019d4ca43812ae2649ff353a93113c617522f13845031400286e57926d4b04f318f6b24bd9a9c2595d4feccfafbb1c22cda38be60189111224924fb102
+  languageName: node
+  linkType: hard
+
 "@eslint-community/eslint-utils@npm:^4.2.0, @eslint-community/eslint-utils@npm:^4.4.0":
   version: 4.4.0
   resolution: "@eslint-community/eslint-utils@npm:4.4.0"
@@ -477,6 +511,51 @@ __metadata:
   version: 8.56.0
   resolution: "@eslint/js@npm:8.56.0"
   checksum: 60b3a1cf240e2479cec9742424224465dc50e46d781da1b7f5ef240501b2d1202c225bd456207faac4b34a64f4765833345bc4ddffd00395e1db40fa8c426f5a
+  languageName: node
+  linkType: hard
+
+"@grammyjs/conversations@npm:^1.1.2":
+  version: 1.1.2
+  resolution: "@grammyjs/conversations@npm:1.1.2"
+  dependencies:
+    "@grammyjs/types": "npm:^3.1.1"
+    debug: "npm:^4.3.4"
+    o-son: "npm:^1.0.1"
+  peerDependencies:
+    grammy: ^1.10.0
+  checksum: 9119d6b7bd6f17dda2c19ab391c0192ff51449878b9f9859fd3af0beee2805a07e38fde3ccf332895121e4c890afe65c48859e0e4ba2a7c93a23f6320e16cbf8
+  languageName: node
+  linkType: hard
+
+"@grammyjs/i18n@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "@grammyjs/i18n@npm:1.0.1"
+  dependencies:
+    "@deno/shim-deno": "npm:~0.9.0"
+  peerDependencies:
+    grammy: ^1.10.0
+  checksum: 34f669cae19d0aa1d2a5d14d54da131715210d46b45aceb2fa424bdb6cc2d60dd84402cdeab90f3b25922d6b6b869a46214f4b675c7dac2693a5cf62f2320c15
+  languageName: node
+  linkType: hard
+
+"@grammyjs/storage-redis@npm:^2.4.1":
+  version: 2.4.1
+  resolution: "@grammyjs/storage-redis@npm:2.4.1"
+  checksum: a51093390ea1114350f1b1934dc1656a7f6ce0133b5cb6acac7dd189bb4e0b09cda2788370088bdb300ed56eee677febbdb47be3f4599e4aba94dafad8f7a7c2
+  languageName: node
+  linkType: hard
+
+"@grammyjs/types@npm:3.3.0":
+  version: 3.3.0
+  resolution: "@grammyjs/types@npm:3.3.0"
+  checksum: 9f14b85de5a24fe0174f6aad922971314bd32b3251488cbf21c6a9d37384ad1133e0d2e0b83d41fa6c8e077bdad941e601ab6aad727765fd550f78639da5e636
+  languageName: node
+  linkType: hard
+
+"@grammyjs/types@npm:^3.1.1":
+  version: 3.3.1
+  resolution: "@grammyjs/types@npm:3.3.1"
+  checksum: 088542c787d4aa7e2fb0b3d22836b7ecb71635dac311ed265ab9a02054fae68f46b046318819a207ec92f7f5459ece29c8267873c0437b54dfc79febd8252637
   languageName: node
   linkType: hard
 
@@ -1227,6 +1306,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/ioredis@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@types/ioredis@npm:5.0.0"
+  dependencies:
+    ioredis: "npm:*"
+  checksum: e52ce4239f0334701fc95fb5aaf1753d75f7582099fdf152743192f49d9ee4a88478b339d015e50cb5e111e38925846cf20668355f4046af7855021d2be181f0
+  languageName: node
+  linkType: hard
+
 "@types/istanbul-lib-coverage@npm:*, @types/istanbul-lib-coverage@npm:^2.0.0, @types/istanbul-lib-coverage@npm:^2.0.1":
   version: 2.0.6
   resolution: "@types/istanbul-lib-coverage@npm:2.0.6"
@@ -1624,6 +1712,15 @@ __metadata:
   version: 2.0.0
   resolution: "abbrev@npm:2.0.0"
   checksum: f742a5a107473946f426c691c08daba61a1d15942616f300b5d32fd735be88fef5cba24201757b6c407fd564555fb48c751cfa33519b2605c8a7aadd22baf372
+  languageName: node
+  linkType: hard
+
+"abort-controller@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "abort-controller@npm:3.0.0"
+  dependencies:
+    event-target-shim: "npm:^5.0.0"
+  checksum: 90ccc50f010250152509a344eb2e71977fbf8db0ab8f1061197e3275ddf6c61a41a6edfd7b9409c664513131dd96e962065415325ef23efa5db931b382d24ca5
   languageName: node
   linkType: hard
 
@@ -3362,6 +3459,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"event-target-shim@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "event-target-shim@npm:5.0.1"
+  checksum: 0255d9f936215fd206156fd4caa9e8d35e62075d720dc7d847e89b417e5e62cf1ce6c9b4e0a1633a9256de0efefaf9f8d26924b1f3c8620cffb9db78e7d3076b
+  languageName: node
+  linkType: hard
+
 "execa@npm:^5.0.0":
   version: 5.1.1
   resolution: "execa@npm:5.1.1"
@@ -3910,6 +4014,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"grammy@npm:^1.19.3":
+  version: 1.19.3
+  resolution: "grammy@npm:1.19.3"
+  dependencies:
+    "@grammyjs/types": "npm:3.3.0"
+    abort-controller: "npm:^3.0.0"
+    debug: "npm:^4.3.4"
+    node-fetch: "npm:^2.7.0"
+  checksum: a5d46713b54e5216fa12b608c2634ba9490a260f57152c87938e697b00112932e12c33a1f68abd127b80df283b8eb376575781e27a454d78929cc55ae57c4a4f
+  languageName: node
+  linkType: hard
+
 "graphemer@npm:^1.4.0":
   version: 1.4.0
   resolution: "graphemer@npm:1.4.0"
@@ -4153,7 +4269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ioredis@npm:^5.3.2":
+"ioredis@npm:*, ioredis@npm:^5.3.2":
   version: 5.3.2
   resolution: "ioredis@npm:5.3.2"
   dependencies:
@@ -5752,6 +5868,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"node-fetch@npm:^2.7.0":
+  version: 2.7.0
+  resolution: "node-fetch@npm:2.7.0"
+  dependencies:
+    whatwg-url: "npm:^5.0.0"
+  peerDependencies:
+    encoding: ^0.1.0
+  peerDependenciesMeta:
+    encoding:
+      optional: true
+  checksum: b55786b6028208e6fbe594ccccc213cab67a72899c9234eb59dba51062a299ea853210fcf526998eaa2867b0963ad72338824450905679ff0fa304b8c5093ae8
+  languageName: node
+  linkType: hard
+
 "node-gyp-build-optional-packages@npm:5.0.7":
   version: 5.0.7
   resolution: "node-gyp-build-optional-packages@npm:5.0.7"
@@ -5873,6 +6003,15 @@ __metadata:
   dependencies:
     path-key: "npm:^4.0.0"
   checksum: ff6d77514489f47fa1c3b1311d09cd4b6d09a874cc1866260f9dea12cbaabda0436ed7f8c2ee44d147bf99a3af29307c6f63b0f83d242b0b6b0ab25dff2629e3
+  languageName: node
+  linkType: hard
+
+"o-son@npm:^1.0.1":
+  version: 1.0.2
+  resolution: "o-son@npm:1.0.2"
+  dependencies:
+    "@deno/shim-deno": "npm:~0.16.1"
+  checksum: 54c9d7dd188d90f1dbdd765deb34ac5eeb249e12fc732f3df4d657ec555da2a22d9f1f7d69a0a6a5d911ca6500ae103ad89ff535e7094d051eea789d8ad1bd18
   languageName: node
   linkType: hard
 
@@ -7298,6 +7437,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tg-bot@workspace:apps/tg-bot":
+  version: 0.0.0-use.local
+  resolution: "tg-bot@workspace:apps/tg-bot"
+  dependencies:
+    "@grammyjs/conversations": "npm:^1.1.2"
+    "@grammyjs/i18n": "npm:^1.0.1"
+    "@grammyjs/storage-redis": "npm:^2.4.1"
+    "@lib/config": "workspace:^"
+    "@lib/db": "workspace:^"
+    "@repo/eslint-config": "workspace:^"
+    "@repo/typescript-config": "workspace:^"
+    "@types/eslint": "npm:^8.44.9"
+    "@types/ioredis": "npm:^5.0.0"
+    "@types/node": "npm:^20.10.5"
+    eslint: "npm:^8.56.0"
+    grammy: "npm:^1.19.3"
+    ioredis: "npm:^5.3.2"
+    nodemon: "npm:^3.0.2"
+    typescript: "npm:^5.3.3"
+  languageName: unknown
+  linkType: soft
+
 "titleize@npm:^3.0.0":
   version: 3.0.0
   resolution: "titleize@npm:3.0.0"
@@ -7343,6 +7504,13 @@ __metadata:
   bin:
     nodetouch: ./bin/nodetouch.js
   checksum: dacb4a639401b83b0a40b56c0565e01096e5ecf38b22a4840d9eeb642a5bea136c6a119e4543f9b172349a5ee343b10cda0880eb47f7d7ddfd6eac59dcf53244
+  languageName: node
+  linkType: hard
+
+"tr46@npm:~0.0.3":
+  version: 0.0.3
+  resolution: "tr46@npm:0.0.3"
+  checksum: 047cb209a6b60c742f05c9d3ace8fa510bff609995c129a37ace03476a9b12db4dbf975e74600830ef0796e18882b2381fb5fb1f6b4f96b832c374de3ab91a11
   languageName: node
   linkType: hard
 
@@ -7775,6 +7943,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"webidl-conversions@npm:^3.0.0":
+  version: 3.0.1
+  resolution: "webidl-conversions@npm:3.0.1"
+  checksum: 5612d5f3e54760a797052eb4927f0ddc01383550f542ccd33d5238cfd65aeed392a45ad38364970d0a0f4fea32e1f4d231b3d8dac4a3bdd385e5cf802ae097db
+  languageName: node
+  linkType: hard
+
+"whatwg-url@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "whatwg-url@npm:5.0.0"
+  dependencies:
+    tr46: "npm:~0.0.3"
+    webidl-conversions: "npm:^3.0.0"
+  checksum: 1588bed84d10b72d5eec1d0faa0722ba1962f1821e7539c535558fb5398d223b0c50d8acab950b8c488b4ba69043fd833cc2697056b167d8ad46fac3995a55d5
+  languageName: node
+  linkType: hard
+
 "which-boxed-primitive@npm:^1.0.2":
   version: 1.0.2
   resolution: "which-boxed-primitive@npm:1.0.2"
@@ -7833,7 +8018,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"which@npm:^2.0.1":
+"which@npm:^2.0.1, which@npm:^2.0.2":
   version: 2.0.2
   resolution: "which@npm:2.0.2"
   dependencies:

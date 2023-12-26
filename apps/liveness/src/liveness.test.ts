@@ -62,9 +62,6 @@ describe("Liveness class", () => {
     expect(mockCtx.prisma.report.create).toHaveBeenCalledWith({
       data: {
         endpointId,
-        response: {
-          success: true
-        },
         status: 200
       }
     });
@@ -238,10 +235,7 @@ describe("Liveness class", () => {
     expect(mockCtx.prisma.report.create).toHaveBeenCalledWith({
       data: {
         endpointId: firstEndpointId,
-        status: 200,
-        response: {
-          success: true
-        }
+        status: 200
       }
     });
     expect(mockCtx.prisma.report.create).toHaveBeenCalledWith({

@@ -8,7 +8,9 @@
     "dev": "turbo dev",
     "lint": "turbo lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "test": "turbo test --color"
+    "test": "turbo test --color",
+    "prisma:studio": "yarn workspace @lib/db prisma studio",
+    "prisma:push": "yarn workspace @lib/db prisma generate && yarn workspace @lib/db prisma db push"
   },
   "devDependencies": {
     "@repo/eslint-config": "*",
